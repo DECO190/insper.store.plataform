@@ -8,4 +8,4 @@ order/
 order-service/
 gateway-service/
 exchange-service/
-asddft
+.env

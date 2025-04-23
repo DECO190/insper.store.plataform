@@ -24,6 +24,12 @@ services:
       DATABASE_USER: ${POSTGRES_USER:-store}
       DATABASE_PASSWORD: ${POSTGRES_PASSWORD:-store}
 
+  exchange:
+    hostname: exchange
+    build:
+      context: ./exchange-service
+      dockerfile: Dockerfile
+
   auth:
     hostname: auth
     build:
