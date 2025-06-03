@@ -1,0 +1,11 @@
+site/
+env/
+.env/
+.cache/
+.vscode/
+target/
+volume/
+__pycache__/
+./api/.env
+.DS_Store
+.venv

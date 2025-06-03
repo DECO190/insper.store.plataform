@@ -1,0 +1,13 @@
+account/
+account-service/
+auth/
+auth-service/
+product/
+./product
+product-service/
+order/
+order-service/
+gateway-service/
+exchange-service/
+.env
+postgres-service/
