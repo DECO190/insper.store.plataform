@@ -1,4 +1,4 @@
-site_name: Documentação
+site_name: DECO190 Documentation
 site_author: Andre Oliveira
 repo_name: github/documentation.template
 
@@ -132,9 +132,10 @@ extra_javascript:
 nav:
   - Home: index.md
   - Repositories: repositories.md
-  - Service:
+  - Services:
       - Exchange API: exercises/exchange-api.md
       - Product API: exercises/product-api.md
       - Order API: exercises/order-api.md
       - Jenkins: exercises/jenkins.md
       - MiniKube: exercises/minikube.md
+      - Bottlenecks: exercises/bottlenecks.md

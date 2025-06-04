@@ -15,6 +15,8 @@ services:
       - 5432:5432
 
   account:
+    depends_on:
+      - db
     hostname: account
     build:
       context: ./account-service
@@ -25,6 +27,8 @@ services:
       DATABASE_PASSWORD: ${POSTGRES_PASSWORD:-store}
   
   product:
+    depends_on:
+      - db
     hostname: product
     build:
       context: ./product-service
@@ -35,6 +39,8 @@ services:
       DATABASE_PASSWORD: ${POSTGRES_PASSWORD:-store}
 
   order:
+    depends_on:
+      - db
     hostname: order
     build:
       context: ./order-service
@@ -51,6 +57,9 @@ services:
       dockerfile: Dockerfile
 
   auth:
+    depends_on:
+      - db
+
     hostname: auth
     build:
       context: ./auth-service
@@ -59,6 +68,8 @@ services:
       JWT_SECRET_KEY: ${JWT_SECRET_KEY:-yrBBgYlvJQeslzFlgX9MFZccToI2fjRFqualquercoisa}
 
   gateway:
+    depends_on:
+      - db
     hostname: gateway
     build:
       context: ./gateway-service
