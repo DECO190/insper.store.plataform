@@ -6,3 +6,5 @@
 - The architecture follows the microservices pattern, allowing for scalability and maintainability.
 
 <iframe width="100%" height="470" src="https://www.youtube.com/watch?v=ZKsXttncRh4&ab_channel=AndrePereira" allowfullscreen></iframe>
+
+[YouTube Video](https://www.youtube.com/watch?v=ZKsXttncRh4&ab_channel=AndrePereira)
